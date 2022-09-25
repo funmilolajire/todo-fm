@@ -1,0 +1,86 @@
+.create {
+    position: relative;
+    width: 100%;
+    height: 6.4rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+    box-shadow: 0px 35px 50px -15px var(--box-shadow);
+    background: var(--box-background);
+    border-radius: 5px;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 2.4rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        border: 1px solid var(--check-border);
+        border-radius: 50%;
+    }
+
+    input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        color: var(--text-input);
+        padding: 0 2rem 0 7.2rem;
+        font-family: inherit;
+        font-size: 1.8rem;
+        line-height: 1;
+        letter-spacing: -0.25px;
+        border: 0;
+        caret-color: $bright-blue;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &::-webkit-input-placeholder {
+            color: var(--text-placeholder);
+        }
+
+        &::-moz-placeholder {
+            color: var(--text-placeholder);
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--text-placeholder);
+        }
+
+        &::-ms-input-placeholder {
+            color: var(--text-placeholder);
+        }
+
+        &::placeholder {
+            color: var(--text-placeholder);
+        }
+
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+            outline: 0;
+        }
+    }
+}
+
+@media all and (max-width: 450px) {
+    .create {
+        height: 4.8rem;
+        margin-bottom: 1.6rem;
+
+        &::before {
+            left: 2rem;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+
+        input {
+            padding: 0 1.5rem 0 5.2rem;
+            font-size: 1.2rem;
+            letter-spacing: -0.166667px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "tasks": [{
+        "id": "1",
+        "status": "completed",
+        "task": "Complete online JavaScript course"
+    }, {
+        "id": "2",
+        "status": "active",
+        "task": "Jog around the park 3x"
+    }, {
+        "id": "3",
+        "status": "active",
+        "task": "10 minutes meditation"
+    }, {
+        "id": "4",
+        "status": "active",
+        "task": "Read for 1 hour"
+    }, {
+        "id": "5",
+        "status": "active",
+        "task": "Pick up groceries"
+    }, {
+        "id": "6",
+        "status": "active",
+        "task": "Complete Todo App on Frontend Mentor"
+    }]
+}

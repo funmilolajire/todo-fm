@@ -28,10 +28,8 @@ const ListItem = ({
       className={`${styles["list-item"]} ${
         status === "completed" ? styles.completed : ""
       }`}
-      ref={setNodeRef}
       style={style}
-      {...attributes}
-      {...listeners}
+      ref={setNodeRef}
     >
       <button
         type="button"
@@ -40,7 +38,9 @@ const ListItem = ({
       >
         {" "}
       </button>
-      <p className={styles.task}>{task}</p>
+      <p className={styles.task} {...attributes} {...listeners}>
+        {task}
+      </p>
       <button
         type="button"
         className={styles.clear}

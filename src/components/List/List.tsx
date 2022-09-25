@@ -73,7 +73,7 @@ const List = ({
   return (
     <>
       <div className={styles.tasks}>
-        <ul className={styles.list}>
+        <div className={styles.list}>
           <DndContext
             sensors={sensors}
             collisionDetection={closestCenter}
@@ -93,7 +93,7 @@ const List = ({
               ))}
             </SortableContext>
           </DndContext>
-        </ul>
+        </div>
         <div className={styles.actions}>
           <span className={styles["items-left"]}>
             {activeTasks.length} item

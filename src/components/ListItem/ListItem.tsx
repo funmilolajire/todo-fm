@@ -31,13 +31,13 @@ const ListItem = ({
       style={style}
       ref={setNodeRef}
     >
-      <button
-        type="button"
+      <span
+        tabIndex={0}
         className={styles["check-box"]}
         onClick={() => markCompleted(id)}
       >
         {" "}
-      </button>
+      </span>
       <p className={styles.task} {...attributes} {...listeners}>
         {task}
       </p>

@@ -50,6 +50,7 @@
         border-radius: 50%;
         border: 1px solid var(--check-border);
         flex-shrink: 0;
+        cursor: pointer;
 
         &:hover:not(.completed .check-box) {
             background: linear-gradient(var(--box-background), var(--box-background)) padding-box,
